@@ -3,7 +3,7 @@
   <v-app id="inspire">
     <v-app-bar
       app
-      color="white"
+      color="#0b525b"
       flat
     >
 
@@ -11,7 +11,7 @@
       <v-tabs
         centered
         class="ml-n9"
-        color="grey darken-1"
+        color="white"
       >
         <v-tab
           v-for="link in links"
@@ -25,7 +25,7 @@
 
     </v-app-bar>
 
-    <v-main class="blue lighten-3">
+    <v-main style="background-color: #212f45">
       <v-container>
         <v-row>
 
@@ -56,7 +56,7 @@ export default {
 
   data: () => ({
       links: [
-        {text: 'Naslovnica',
+        {text: 'Karte',
         path: '/'},
         {text: 'O meni',
         path: '/Omeni'},
