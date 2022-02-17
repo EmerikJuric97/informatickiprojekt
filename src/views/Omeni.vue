@@ -1,34 +1,20 @@
 <template>
-  <v-app id="inspire">
-    <v-main>
-      <v-container>
-        <v-row>
-          <v-col
-            v-for="karta in karte"
-            :key="karta"
-            cols="12"
-            md="3"
-            style="background-color: #023047"
-          >
-            <v-card height="200">
-              {{ karta.name }}
-              <img :src="karta.images.small" height="80px" width="40px">
-              
-            </v-card>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col cols="12">
-              <v-pagination
-      v-model="page"
-      :length="4"
-      circle
-    ></v-pagination>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-main>
-  </v-app>
+  <div style="background-color: #212f45; justify-content: center">
+    <v-container>
+      <v-row style="justify-content: center">
+        <v-col cols="4" style="justify-content: center">
+      <h2 style="color:white; justify-content: center">Ime i prezime: Emerik Jurić</h2>
+      </v-col>
+      <v-row>
+      <v-col>
+      <h3 style="color:white">Završio sam Strojarsku tehničku školu u Osijeku te trenutno studiram studij Informatike u Orašju. Slobodno vrijeme volim
+        provoditi s obitelji i prijateljima te se također bavim kao freelancer u području 3D modeliranja i animacije.
+      </h3>
+      </v-col>
+      </v-row>
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script>

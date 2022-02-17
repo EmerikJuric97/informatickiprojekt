@@ -36,6 +36,7 @@
             <v-sheet
               min-height="70vh"
               rounded="lg"
+              color="#212f45"
             >
               <router-view></router-view>
             </v-sheet>
@@ -60,7 +61,7 @@ export default {
         path: '/'},
         {text: 'O meni',
         path: '/Omeni'},
-        {text: 'O predmetu',
+        {text: 'O projektu',
         path: '/Opredmetu'},
       ],
     }),
